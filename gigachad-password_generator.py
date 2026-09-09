@@ -10,7 +10,6 @@ _STRIP_AMBIGUOUS = str.maketrans("", "", AMBIGUOUS_CHARS)
 def generate_password(length: int, exclude_ambiguous: bool = False) -> str:
     
     """Generate a cryptographically secure random password.
-
     Guarantees at least one lowercase letter, one uppercase letter,
     one digit, and one punctuation character.
     Args:
